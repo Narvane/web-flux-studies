@@ -27,4 +27,4 @@ postgres/data/*
 *.tmp
 *.temp
 
-.env
+/.env
