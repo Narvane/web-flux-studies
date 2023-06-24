@@ -1,11 +1,11 @@
-# Ignorar a pasta gradle/cache
-gradle/cache/
+# Ignorar o conteúdo da pasta gradle/cache
+gradle/cache/*
 
-# Ignorar a pasta ssh
-ssh/
+# Ignorar o conteúdo da pasta ssh
+ssh/*
 
-# Ignorar a pasta postgres
-postgres/data/
+# Ignorar o conteúdo da pasta postgres
+postgres/data/*
 
 # Ignorar todos os arquivos com extensão .class
 *.class
