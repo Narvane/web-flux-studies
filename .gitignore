@@ -1,0 +1,26 @@
+# Ignorar a pasta gradle/cache
+gradle/cache/
+
+# Ignorar a pasta ssh
+ssh/
+
+# Ignorar a pasta postgres
+postgres/data/
+
+# Ignorar todos os arquivos com extensão .class
+*.class
+
+# Ignorar todos os arquivos de build gerados pelo Gradle
+/build/
+
+# Ignorar arquivos de configuração local
+.gradle/
+.idea/
+*.iml
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários
+*.tmp
+*.temp
