@@ -10,6 +10,14 @@ WORKDIR /app
 RUN git config --global user.name "${USER_GIT}"
 RUN git config --global user.email "${EMAIL_GIT}"
 
+# Configurações do SSH do Git
+RUN mkdir -p /root/.ssh
+#COPY ssh/ /root/.ssh/
+RUN chmod 600 /root/.ssh/
+RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
+
+ENV GIT_SSH_COMMAND="ssh -i /root/.ssh/ssh"
+
 # Verifica se o diretório /app está vazio
 RUN if [ ! -d /app ]; then \
       git clone https://github.com/Narvane/web-flux-studies.git .; \

@@ -9,7 +9,7 @@ services:
     volumes:
       - ${PROJECT_PATH}\postgres\data:/var/lib/postgresql/data
     networks:
-      - mynetwork
+      - my-network
     env_file:
       - .env
 
@@ -20,9 +20,9 @@ services:
     volumes:
       - ${PROJECT_PATH}:/app
       - ${PROJECT_PATH}\gradle\caches:/root/.gradle
-      - ${PROJECT_PATH}\ssh\ssh:/root/.ssh
+      - ${PROJECT_PATH}\ssh\:/root/.ssh
     networks:
-      - mynetwork
+      - my-network
     depends_on:
       - postgres
     env_file:
@@ -30,5 +30,5 @@ services:
 
 
 networks:
-  mynetwork:
+  my-network:
 

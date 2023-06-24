@@ -24,3 +24,5 @@ postgres/data/
 # Ignorar arquivos temporários
 *.tmp
 *.temp
+
+.env
