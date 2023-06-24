@@ -2,7 +2,9 @@
 gradle/cache/*
 
 # Ignorar o conteúdo da pasta ssh
-ssh/*
+ssh/ssh
+ssh/ssh.pub
+ssh/known_hosts
 
 # Ignorar o conteúdo da pasta postgres
 postgres/data/*
